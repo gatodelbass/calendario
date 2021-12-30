@@ -1,7 +1,7 @@
 
 <?php 
 
-use Google_Client as BaseGoogleClient;
+use GoogleClient as BaseGoogleClient;
 
 /**
  * Class GoogleClient

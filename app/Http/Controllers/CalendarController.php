@@ -16,4 +16,9 @@ class CalendarController extends Controller
 
         dd($this->client);
     }
+
+    public function index(){
+        dd("hola");
+    }
+    
 }
