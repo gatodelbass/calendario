@@ -44,7 +44,7 @@ class CalendarController extends Controller
 
         $date = Carbon::parse('2021-12-31 11:59:56');
 
-        $attendees = ['email' => "davemmgc88@hotmail.com",'email' => "gatodelbass@gmail.com",'email' => "cami4422@gmail.com "];
+        $attendees = ['email' => "davemmgc88@hotmail.com",'email' => "gatodelbass@gmail.com",'email' => "william.aldanavela@gmail.com"];
 
         $event = new \Google_Service_Calendar_Event([
             'summary' => "evento con invitados? tercera parte",
