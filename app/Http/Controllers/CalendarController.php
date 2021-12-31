@@ -58,6 +58,7 @@ class CalendarController extends Controller
             'attendees' => array(
                 array('email' => 'davemmgc88@hotmail.com'),
                 array('email' => 'gatodelbass@gmail.com'),
+                array('email' => 'cami4422@gmail.com'),
               ),
         ]);
         dd($calendarService->events->insert('primary', $event));
