@@ -1,11 +1,17 @@
-<?php
-namespace App\Components;
+
+<?php 
 
 use Google_Client as BaseGoogleClient;
 
-class GoogleClient {
-
-
+/**
+ * Class GoogleClient
+ * @package App\Components
+ */
+class GoogleClientGat
+{
+    /**
+     * @var BaseGoogleClient
+     */
     protected $client;
 
     /**
@@ -17,7 +23,10 @@ class GoogleClient {
         $this->client = $client;
     }
 
-
+    /**
+     * @return BaseGoogleClient
+     * @throws \Exception
+     */
     public function getClient()
     {
         //kiểm tra credentials và token có tồn tại hay không
@@ -45,6 +54,4 @@ class GoogleClient {
 
         return $this->client;
     }
-
 }
-
