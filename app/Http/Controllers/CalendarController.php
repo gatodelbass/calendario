@@ -39,6 +39,9 @@ class CalendarController extends Controller
     }
 
     public function attendee(){
+
+        $calendarService = new Google_Service_Calendar($this->client);
+
         $date = Carbon::parse('2021-12-31 11:59:56');
 
         $attendees = ["davemmgc88@hotmail.com","gatodelbass@gmail.com","cami4422@gmail.com "];
