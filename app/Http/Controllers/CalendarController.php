@@ -16,7 +16,7 @@ class CalendarController extends Controller
         $this->client = $client->getClient();
     }
 
-    public function index()
+    public function calendar()
     {
         
         $calendarService = new Google_Service_Calendar($this->client);

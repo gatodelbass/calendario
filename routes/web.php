@@ -29,4 +29,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 
-Route::get('index', [App\Http\Controllers\CalendarController::class, 'index'])->name('index');
+Route::get('calendar', [App\Http\Controllers\CalendarController::class, 'calendar'])->name('calendar');
