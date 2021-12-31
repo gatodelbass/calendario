@@ -55,7 +55,10 @@ class CalendarController extends Controller
             'end' => [
                 'dateTime' => $date->addHour()
             ],
-            'attendees' => $attendees
+            'attendees' => array(
+                array('email' => 'davemmgc88@hotmail.com'),
+                array('email' => 'gatodelbass@gmail.com'),
+              ),
         ]);
         dd($calendarService->events->insert('primary', $event));
 
