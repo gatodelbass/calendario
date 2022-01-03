@@ -42,12 +42,12 @@ class CalendarController extends Controller
 
         $calendarService = new Google_Service_Calendar($this->client);
 
-        $date = Carbon::parse('2021-12-31 11:59:56');
+        $date = Carbon::parse('2022-01-03 11:59:56');
 
         $attendees = ['email' => "davemmgc88@hotmail.com",'email' => "gatodelbass@gmail.com",'email' => "william.aldanavela@gmail.com"];
 
         $event = new \Google_Service_Calendar_Event([
-            'summary' => "evento con invitados? tercera parte",
+            'summary' => "cualquiera",
             'description' => "Descripcion",
             'start' => [
                 'dateTime' => $date
@@ -57,8 +57,8 @@ class CalendarController extends Controller
             ],
             'attendees' => array(
                 array('email' => 'davemmgc88@hotmail.com'),
-                array('email' => 'gatodelbass@gmail.com'),
-                array('email' => 'cami4422@gmail.com'),
+                array('email' => 'william.aldanavela@gmail.com'),
+                array('email' => 'hugo.acanoh@gmail.com'),
               ),
         ]);
         dd($calendarService->events->insert('primary', $event));
